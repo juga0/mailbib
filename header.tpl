@@ -17,4 +17,4 @@
 </head>
 
 <body>
-  <h1>RFCs/Papers on Email related topics</h1>
+  <h1>RFCs, drafts and specifications related to Email and encryption</h1>
