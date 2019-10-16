@@ -373,6 +373,21 @@
   url         = {https://datatracker.ietf.org/doc/draft-bre-openpgp-samples},
 }
 
+@Misc{rfc6797,
+  author       = {Jeff Hodges and Collin Jackson and Adam Barth},
+  title        = {{HTTP Strict Transport Security (HSTS)}},
+  howpublished = {RFC 6797},
+  month        = nov,
+  year         = {2012},
+  abstract     = {This specification defines a mechanism enabling web sites to declare themselves accessible only via secure connections and/or for users to be able to direct their user agent(s) to interact with given sites only over secure connections. This overall policy is referred to as HTTP Strict Transport Security (HSTS). The policy is declared by web sites via the Strict-Transport-Security HTTP response header field and/or by other means, such as user agent configuration, for example. {[}STANDARDS-TRACK{]}},
+  doi          = {10.17487/RFC6797},
+  number       = {6797},
+  pagetotal    = {46},
+  publisher    = {RFC Editor},
+  series       = {Request for Comments},
+  url          = {https://rfc-editor.org/rfc/rfc6797.txt},
+}
+
 @TechReport{dkg-openpgp-pgpmime-message-mangling,
   author      = {Daniel Kahn Gillmor},
   title       = {{Common PGP/MIME Message Mangling}},
@@ -385,6 +400,51 @@
   url         = {https://datatracker.ietf.org/doc/draft-dkg-openpgp-pgpmime-message-mangling},
 }
 
+@Misc{rfc6698,
+  author       = {Paul E. Hoffman and Jakob Schlyter},
+  title        = {{The DNS-Based Authentication of Named Entities (DANE) Transport Layer Security (TLS) Protocol: TLSA}},
+  howpublished = {RFC 6698},
+  month        = aug,
+  year         = {2012},
+  abstract     = {Encrypted communication on the Internet often uses Transport Layer Security (TLS), which depends on third parties to certify the keys used. This document improves on that situation by enabling the administrators of domain names to specify the keys used in that domain's TLS servers. This requires matching improvements in TLS client software, but no change in TLS server software. {[}STANDARDS-TRACK{]}},
+  doi          = {10.17487/RFC6698},
+  number       = {6698},
+  pagetotal    = {37},
+  publisher    = {RFC Editor},
+  series       = {Request for Comments},
+  url          = {https://rfc-editor.org/rfc/rfc6698.txt},
+}
+
+@Misc{rfc6376,
+  author       = {Murray Kucherawy and Dave Crocker and Tony Hansen},
+  title        = {{DomainKeys Identified Mail (DKIM) Signatures}},
+  howpublished = {RFC 6376},
+  month        = sep,
+  year         = {2011},
+  abstract     = {DomainKeys Identified Mail (DKIM) permits a person, role, or organization that owns the signing domain to claim some responsibility for a message by associating the domain with the message. This can be an author's organization, an operational relay, or one of their agents. DKIM separates the question of the identity of the Signer of the message from the purported author of the message. Assertion of responsibility is validated through a cryptographic signature and by querying the Signer's domain directly to retrieve the appropriate public key. Message transit from author to recipient is through relays that typically make no substantive change to the message content and thus preserve the DKIM signature. This memo obsoletes RFC 4871 and RFC 5672. {[}STANDARDS-TRACK{]}},
+  doi          = {10.17487/RFC6376},
+  number       = {6376},
+  pagetotal    = {76},
+  publisher    = {RFC Editor},
+  series       = {Request for Comments},
+  url          = {https://rfc-editor.org/rfc/rfc6376.txt},
+}
+
+@Misc{rfc7208,
+  author       = {Scott Kitterman},
+  title        = {{Sender Policy Framework (SPF) for Authorizing Use of Domains in Email, Version 1}},
+  howpublished = {RFC 7208},
+  month        = apr,
+  year         = {2014},
+  abstract     = {Email on the Internet can be forged in a number of ways. In particular, existing protocols place no restriction on what a sending host can use as the "MAIL FROM" of a message or the domain given on the SMTP HELO/EHLO commands. This document describes version 1 of the Sender Policy Framework (SPF) protocol, whereby ADministrative Management Domains (ADMDs) can explicitly authorize the hosts that are allowed to use their domain names, and a receiving host can check such authorization. This document obsoletes RFC 4408.},
+  doi          = {10.17487/RFC7208},
+  number       = {7208},
+  pagetotal    = {64},
+  publisher    = {RFC Editor},
+  series       = {Request for Comments},
+  url          = {https://rfc-editor.org/rfc/rfc7208.txt},
+}
+
 @TechReport{Autocrypt,
   author      = {Autocrypt},
   title       = {{Convenient End-to-End Encryption for E-Mail}},
@@ -395,6 +455,21 @@
 For users, Autocrypt Level 1 offers single-click, opt-in encryption, eases encrypted group communications, and provides a way to setup encryption on multiple devices.},
   publisher   = {Autocrypt},
   url         = {https://autocrypt.org/},
+}
+
+@Misc{rfc7929,
+  author       = {Paul Wouters},
+  title        = {{DNS-Based Authentication of Named Entities (DANE) Bindings for OpenPGP}},
+  howpublished = {RFC 7929},
+  month        = aug,
+  year         = {2016},
+  abstract     = {OpenPGP is a message format for email (and file) encryption that lacks a standardized lookup mechanism to securely obtain OpenPGP public keys. DNS-Based Authentication of Named Entities (DANE) is a method for publishing public keys in DNS. This document specifies a DANE method for publishing and locating OpenPGP public keys in DNS for a specific email address using a new OPENPGPKEY DNS resource record. Security is provided via Secure DNS, however the OPENPGPKEY record is not a replacement for verification of authenticity via the "web of trust" or manual verification. The OPENPGPKEY record can be used to encrypt an email that would otherwise have to be sent unencrypted.},
+  doi          = {10.17487/RFC7929},
+  number       = {7929},
+  pagetotal    = {20},
+  publisher    = {RFC Editor},
+  series       = {Request for Comments},
+  url          = {https://rfc-editor.org/rfc/rfc7929.txt},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
